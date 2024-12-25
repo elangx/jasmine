@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@layer base {*/
+/*  @font-face {*/
+/*    font-display: swap;*/
+/*    font-family: HarmonyOS-Sans;*/
+/*    src: url(./font/HarmonyOS-Sans.woff2) format("truetype");*/
+/*  }*/
+/*  html {*/
+/*    -webkit-tap-highlight-color: transparent;*/
+/*  }*/
+/*}*/
+
+@layer utilities {
+  .min-h-screen-jasmine {
+    min-height: calc(100vh - 5rem);
+  }
+
+  .p-tag {
+    padding: 0.25rem 1rem;
+  }
+
+  .text-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .jasmine-letter-spacing {
+    letter-spacing: 0.03em;
+  }
+}
+
+@layer components {
+  .jasmine-body {
+    @apply m-2 bg-stone-100 text-neutral-500 dark:bg-[#0a0c19] dark:text-gray-400 md:max-w-[1200px] lg:mx-auto lg:my-16;
+  }
+
+  .jasmine-container {
+    @apply rounded bg-white dark:bg-[rgba(22,24,41,0.9)];
+  }
+
+  .jasmine-primary-color {
+    @apply text-black dark:text-neutral-200;
+  }
+
+  .jasmine-primary-bg {
+    background-color: var(--primary-bg);
+    @apply dark:bg-black;
+  }
+
+  .jasmine-primary-bg-hover:hover {
+    background-color: var(--primary-bg);
+    @apply dark:hover:bg-black;
+  }
+
+  .jasmine-link-color {
+    color: var(--link-color);
+    @apply dark:text-neutral-200;
+  }
+
+  .jasmine-link-color-hover:hover {
+    color: var(--link-hover-color);
+    @apply dark:text-neutral-200;
+  }
+
+  .protected .text {
+    @apply col-span-3 rounded border border-[#ced4da] px-2 py-1 dark:border-black dark:!bg-[#0d1117] dark:!text-gray-400 md:col-span-1;
+  }
+
+  .protected .submit {
+    @apply ml-2 rounded bg-black px-2 py-1 text-white;
+  }
+}
