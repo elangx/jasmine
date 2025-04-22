@@ -53,12 +53,6 @@
     </ul>
     <ul class="nav flex items-center gap-x-3">
         <li>
-            <button onclick="jasmine.switchDark()">
-                <iconify-icon icon="<?php echo getOptionValueOrDefault("switchDarkIconPhone", "tabler:sun-moon"); ?>"
-                              class="rounded px-3 py-2 text-lg"></iconify-icon>
-            </button>
-        </li>
-        <li>
             <form method="post" action="" id="search" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
                 <meta itemprop="target" content="<?php $this->options->siteUrl(); ?>search/{s}/">
                 <label for="search" class="flex flex-row">
